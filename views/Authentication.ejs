@@ -6,22 +6,22 @@
         <link rel="stylesheet" href="/css/style.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
-    <body background="background2.jpg">
+    <body style = "background-image: url('/css/background2.jpg');">
         <div class="center">
             <div class="container">
-                <a href="HomePage.html">
-                    <label class="close-btn fas fa-times"></label>
-                </a>
 
                 <div class="text">Employee Authentication</div>
-                <form action="#">
+                <form action="/admin_role" method='post'>
+                    <a href="HomePage.html">
+                        <label class="close-btn fas fa-times"></label>
+                    </a>
                     <div class="data">
                         <label>Employee ID</label>
-                        <input type="text" required>
+                        <input type="text" name="username" required>
                     </div>
                     <div class="data">
                         <label>Password</label>
-                        <input type="password" required>
+                        <input type="password" name="password" required>
                     </div>
                     <div class="btn">
                         <div class="inner"></div>
