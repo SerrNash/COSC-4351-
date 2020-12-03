@@ -43,7 +43,10 @@ app.post('/admin_role',function(request,response){
     }
 });
 
-app.listen('5000');
+app.get('*', function(request, response){
+    response.redirect('/');
+});
 
+app.listen('5000');
 
 
